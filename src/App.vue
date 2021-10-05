@@ -1,9 +1,13 @@
 <template>
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+    <OUserList />
 </template>
 
-<script lang="ts">
-    import HelloWorld from './components/HelloWorld.vue';
+<script setup lang="ts">
+/* eslint-disable-next-line */
+import OUserList from './components/unique-organisms/o-user-list';
+import useStoreUsers from './use/use-store-users';
 
+const { fillUserList } = useStoreUsers();
 
+fillUserList();
 </script>

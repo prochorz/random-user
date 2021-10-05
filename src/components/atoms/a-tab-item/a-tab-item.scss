@@ -1,0 +1,30 @@
+@import "../../../assets/scss/variables";
+
+.a-tab-item {
+  overflow: hidden;
+
+  &.tab-item--active {
+    .tab-item__wrapper {
+      background: $gray;
+      border-color: $black;
+      transform: translateY(0);
+    }
+  }
+
+  .tab-item__wrapper {
+    text-transform: uppercase;
+    padding: 4px;
+    border-top: 1px solid $gray;
+    border-right: 1px solid $gray;
+    border-left: 1px solid $gray;
+    border-radius: 4px 4px 0 0;
+    text-align: center;
+    cursor: pointer;
+    transform: translateY(4px);
+    transition: transform .05s;
+
+    &:hover {
+      transform: translateY(0);
+    }
+  }
+}

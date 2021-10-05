@@ -1,0 +1,10 @@
+@import "../../../assets/scss/variables";
+
+.m-tab-list {
+  display: flex;
+  border-bottom: 1px solid $black;
+
+  .tab-list__item {
+    flex: 1;
+  }
+}

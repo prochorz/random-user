@@ -1,0 +1,56 @@
+{
+  "gender": "male",
+  "name": {
+    "title": "Mr",
+    "first": "Aron",
+    "last": "Winther"
+  },
+  "location": {
+    "street": {
+      "number": 6316,
+      "name": "Gravdalsveien"
+    },
+    "city": "Bjølstad",
+    "state": "Møre og Romsdal",
+    "country": "Norway",
+    "postcode": "3017",
+    "coordinates": {
+      "latitude": "53.2357",
+      "longitude": "-93.1954"
+    },
+    "timezone": {
+      "offset": "-10:00",
+      "description": "Hawaii"
+    }
+  },
+  "email": "aron.winther@example.com",
+  "login": {
+    "uuid": "1f1a406f-e55f-4e3c-bd5b-483e8820dde4",
+    "username": "goldenpanda336",
+    "password": "snowboar",
+    "salt": "5tu94mVn",
+    "md5": "821ac0b0eb2dd73945e5da4331b5db0d",
+    "sha1": "5fb1c79b158f9c2afd4795dffd240c76bfe8e657",
+    "sha256": "a6051e8ca5e3cca4db77c8fdc3e82a67cc93fa360554902ebaa6df772e7aa399"
+  },
+  "dob": {
+    "date": "1973-03-27T02:42:32.690Z",
+    "age": 48
+  },
+  "registered": {
+    "date": "2005-09-04T00:05:49.863Z",
+    "age": 16
+  },
+  "phone": "65108892",
+  "cell": "98365381",
+  "id": {
+    "name": "FN",
+    "value": "27037326327"
+  },
+  "picture": {
+    "large": "https://randomuser.me/api/portraits/men/89.jpg",
+    "medium": "https://randomuser.me/api/portraits/med/men/89.jpg",
+    "thumbnail": "https://randomuser.me/api/portraits/thumb/men/89.jpg"
+  },
+  "nat": "NO"
+}

@@ -9,19 +9,39 @@
     "cu": "hygen create composable",
     "stylelint": "stylelint **/components/**/*.{scss,vue} --fix",
     "lint": "vue-tsc --noEmit && eslint --ext .js,.vue,.ts --ignore-path .gitignore .",
-    "lint-fix": "eslint --fix --ext .js,.vue,.ts --ignore-path .gitignore .",
-    "prepare": "husky install"
+    "lint-fix": "eslint --fix --ext .js,.vue,.ts --ignore-path .gitignore ."
+  },
+  "lint-staged": {
+    "**/components/**/*.{scss,vue}": [
+      "stylelint --fix",
+      "git add"
+    ],
+    "**/components/**/*.{ts,vue}": [
+      "npm run lint"
+    ],
+    "**/assets/**/*.scss": [
+      "stylelint --fix",
+      "git add"
+    ],
+    "utils/**/*.ts": "npm run lint"
   },
   "dependencies": {
-    "hygen": "^6.1.0",
-    "vue": "^3.2.16"
+    "axios": "^0.22.0",
+    "class-transformer": "^0.4.0",
+    "class-validator": "^0.13.1",
+    "reflect-metadata": "^0.1.13",
+    "vue": "^3.2.16",
+    "vuex": "^4.0.0"
   },
   "devDependencies": {
+    "hygen": "^6.1.0",
     "@vitejs/plugin-vue": "^1.9.2",
     "eslint": "~7.21.0",
     "eslint-config-airbnb-base": "~14.2.1",
     "eslint-plugin-vue": "~7.7.0",
     "husky": "^7.0.2",
+    "lint-staged": "^11.2.0",
+    "sass": "^1.38.0",
     "sass-loader": "^10.1.1",
     "stylelint": "^13.12.0",
     "stylelint-config-recommended-scss": "^4.2.0",
@@ -32,6 +52,8 @@
     "stylelint-scss": "^3.19.0",
     "typescript": "^4.4.3",
     "vite": "^2.6.0",
-    "vue-tsc": "^0.3.0"
+    "vue-tsc": "^0.3.0",
+    "@typescript-eslint/eslint-plugin": "~4.16.1",
+    "@typescript-eslint/parser": "~4.16.1"
   }
 }
