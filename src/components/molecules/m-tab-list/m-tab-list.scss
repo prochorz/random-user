@@ -1,3 +1,4 @@
+@import "../../../assets/scss/mixins";
 @import "../../../assets/scss/variables";
 
 .m-tab-list {
@@ -6,5 +7,9 @@
 
   .tab-list__item {
     flex: 1;
+  }
+
+  @include for-tablet {
+    flex-direction: column;
   }
 }

@@ -1,3 +1,4 @@
+@import "../../../assets/scss/mixins";
 @import "../../../assets/scss/variables";
 
 .a-user-row {
@@ -34,5 +35,11 @@
       height: 100%;
       object-fit: fill;
     }
+  }
+
+  @include for-tablet {
+    flex-direction: column;
+    flex-basis: 50%;
+    min-width: 50%;
   }
 }
