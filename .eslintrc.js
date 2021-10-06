@@ -9,10 +9,13 @@ module.exports = {
             jsx: true
         }
     },
+    env: { 'jest/globals': true },
     plugins: [
+        'jest',
         '@typescript-eslint'
     ],
     extends: [
+        'plugin:jest/recommended',
         'airbnb-base/legacy',
         'plugin:vue/vue3-recommended',
         'plugin:@typescript-eslint/recommended'

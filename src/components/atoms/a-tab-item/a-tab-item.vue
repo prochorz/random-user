@@ -1,6 +1,5 @@
 <template>
     <div
-        :at-a-tab-item="atAttribute"
         class="a-tab-item"
         :class="activeClass"
         @click="onClickHandler"
@@ -33,13 +32,6 @@ export default defineComponent({
         isActive: {
             type: Boolean,
             default: false
-        },
-        /**
-         * AQA attribute
-         */
-        atAttribute: {
-            type: String,
-            default: ''
         }
     },
     emits: {
